@@ -21,3 +21,10 @@ cons:
 * minikube doesn't have direct access to docker images on your machine - u need to build them *inside* minikube so it can see/use them
 * needs a lot of resources
 * mostly used for test/dev environments cause you are running single node k8s
+
+
+
+todo:
+* try different ways to spin up k8s like k3s, kind, microk8s
+* checkout k8s visualization tools
+* try to use it for running tests vs services with newman, cypress. maybe some kind of pipeline?
