@@ -4,6 +4,8 @@ theme: minima
 email: marcinzelaskov@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   just unimportant stuff
+header_pages:
+- portfolio.md  
 
 # social links
 github_username:  zelaskov
