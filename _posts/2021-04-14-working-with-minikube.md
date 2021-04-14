@@ -27,4 +27,4 @@ cons:
 todo:
 * try different ways to spin up k8s like k3s, kind, microk8s
 * checkout k8s visualization tools
-* try to use it for running tests vs services with newman, cypress. maybe some kind of pipeline?
+* try to use it for running tests vs pods with newman, cypress. maybe some kind of pipeline?
