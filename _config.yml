@@ -5,7 +5,7 @@ email: marcinzelaskov@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   just unimportant stuff
 header_pages:
-  - cv_mz-1.pdf
+  - CV.md
 
 # social links
 github_username:  zelaskov

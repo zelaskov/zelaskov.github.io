@@ -4,4 +4,4 @@ title: CV
 permalink: /CV/
 ---
 
-something something
+you can checkout my cv [here](cv_mz-1.pdf)
