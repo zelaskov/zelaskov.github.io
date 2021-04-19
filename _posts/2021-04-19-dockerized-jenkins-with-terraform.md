@@ -1,3 +1,8 @@
+---
+title: "dockerized jenkins with terraform"
+date: 2021-04-19
+---
+
 recently i started using [terraform](https://www.terraform.io/) instead of AWS [Cloudformation](https://aws.amazon.com/cloudformation/) for private projects and messing around. i find it easier to use, it's looking simpler for non-infra people, documentation is really slick and community is big. ah, and their website is freakin damn cool!
 
 i wanted to create some simple example of terraform template, but also wanted to get my hands on technology that i don't know or just simply never worked with on daily basis.
