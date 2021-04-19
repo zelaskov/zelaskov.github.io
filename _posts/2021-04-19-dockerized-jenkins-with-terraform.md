@@ -99,11 +99,11 @@ output "instance-public-ip" {
 ```
 now, after we ran ```terraform apply``` we got the public ip of the instance in the outputs of terraform
 
-![output screenshot](../assets/2021-04-19-[0].png)
+![output screenshot](../assets/2021-04-19/2021-04-19-[0].png)
 
 copy this ip, add ```:8080``` cause that's a port that jenkins is running on and you should see a welcome page!
 
-![jenkins screenshot](../assets/2021-04-19-[1].png)
+![jenkins screenshot](../assets/2021-04-19/2021-04-19-[1].png)
 
 **additional notes**
 
