@@ -59,7 +59,7 @@ we want to install docker that will run jenkins image on ec2 and it will get exp
 in the ```connection``` block we need to specify connection type, host, user and path to our **private** key, on our local machine.
 
 ---
-* whole template
+**whole template**
 ```
 resource "aws_instance" "iron-jenkins" {
   ami           = "ami-06fd78dc2f0b69910"
