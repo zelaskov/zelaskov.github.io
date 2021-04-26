@@ -61,8 +61,7 @@ this whole configuration can be also done with
 }
 ```
 
-then we want to select our lambda as a target for an event
-![lambda target](../assets/2021-04-19/2021-04-26-[2].png)
+then we want to select our lambda as a target for an event ![lambda target](../assets/2021-04-19/2021-04-26-[2].png)
 
 and that's basically it. you can test it by pushing new image to ECR.
 
