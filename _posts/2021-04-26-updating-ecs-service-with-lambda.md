@@ -4,7 +4,7 @@ date: 2021-04-26
 ---
 
 sometime ago i was wondering how to get rid of some really old bash scripts that we were using to update ecs service.
-i had an idea to use [AWSLambda](https://aws.amazon.com/lambda/) along with [AWSEventBridge](https://aws.amazon.com/eventbridge/).
+i had an idea to use [AWS Lambda](https://aws.amazon.com/lambda/) along with [AWS EventBridge](https://aws.amazon.com/eventbridge/).
 
 basically i wanted to trigger lambda everytime a new docker image was pushed to [ECR](https://aws.amazon.com/ecr/) and that function would update a service with new image. simply put, a new task definition would be created with that new image.
 
