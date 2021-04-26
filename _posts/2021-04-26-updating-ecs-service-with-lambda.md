@@ -9,7 +9,7 @@ i had an idea to use [AWS Lambda](https://aws.amazon.com/lambda/) along with [AW
 basically i wanted to trigger lambda everytime a new docker image was pushed to [ECR](https://aws.amazon.com/ecr/) and that function would update a service with new image. simply put, a new task definition would be created with that new image.
 
 maybe some diagram will help to understand it a little bit better
-![workflow](../assets/2021-04-19/2021-04-26-[0].png)
+![workflow](/assets/2021-04-19/2021-04-26-[0].png)
 
 ---
 **lambda code**
@@ -38,7 +38,7 @@ we also need to create a rule in the EventBridge. we simply need to go to AWS Ev
 then, there are a few things that are important for us -->
 
 we select an event pattern and then we need to configure our pattern
-![pattern](../assets/2021-04-19/2021-04-26-[1].png)
+![pattern](/assets/2021-04-19/2021-04-26-[1].png)
 
 * service provider - AWS
 * service name - ECR
@@ -61,7 +61,7 @@ this whole configuration can be also done with
 }
 ```
 
-then we want to select our lambda as a target for an event ![lambda target](../assets/2021-04-19/2021-04-26-[2].png)
+then we want to select our lambda as a target for an event ![lambda target](/assets/2021-04-19/2021-04-26-[2].png)
 
 and that's basically it. you can test it by pushing new image to ECR.
 
