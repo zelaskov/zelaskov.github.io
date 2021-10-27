@@ -1,5 +1,5 @@
 ---
-title: "monitor CloudFormation events with CloudWatch Events"
+title: "monitor cloudformation events with cloudwatch events"
 date: 2021-10-27
 ---
 
@@ -103,4 +103,4 @@ we click yes, and to try it out, i'll remove my test CFN stack.
 ```
 we got an email, with the only information that we need. (ofc, i changed some information to not put sensitive data here)
 
-if you still got any issues with setting it up, you can check out my [repo](https://github.com/zelaskov/cloudwatch-cloudformation-sns)
+if you still got any issues with setting it up, you can check out my [repo](https://github.com/zelaskov/cloudwatch-cloudformation-sns).
