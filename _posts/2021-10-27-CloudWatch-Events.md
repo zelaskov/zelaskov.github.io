@@ -1,5 +1,5 @@
 ---
-title: "monitor cloudformation events with cloudwatch events"
+title: "monitor cloudformation api calls with cloudwatch events"
 date: 2021-10-27
 ---
 
