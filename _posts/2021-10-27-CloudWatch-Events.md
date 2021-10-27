@@ -3,10 +3,10 @@ title: "monitor cloudformation api calls with cloudwatch events"
 date: 2021-10-27
 ---
 
-recently, i've run into an issue that one of my colleagues removed CloudFormation stack because he thought that it is no longer used,and long story short, it caused some issues for us.
-i started to wonder if there is a way to somehow monitor CloudFormation stacks. and then i remembered that CloudTrail stores all AWS API events, CloudFormation ones as well.
+recently, i’ve run into an issue: one of my colleagues removed CloudFormation stack because he’d thought it had no longer been used, and long story short, it gave us some trouble. 
+i started to wonder if there was any way to somehow monitor CloudFormation stacks and then i remembered that CloudTrail stores all AWS API events, CloudFormation ones as well.
 
-so basically i wanted any kind of notification if somebody deletes CloudFormation stack, preferably a mail. turns out, it is super easy to do using AWS SNS and AWS CloudWatch Event rules.
+so basically i wanted any kind of notification if somebody deletes CloudFormation stack, preferably a mail. turns out, it's super easy to do using AWS SNS and AWS CloudWatch Event rules.
 
 ---
 
@@ -51,7 +51,7 @@ resource "aws_cloudwatch_event_target" "sns" {
   }
 }
 ```
-first thing, rule itself. the most important part is the event patern - we are looking for AWS API CloudFormation calls, more precisely, we are looking for **DeleteStack** event. if it's needed we can also extend it to any other events that we are interested in.
+first thing, rule itself. the most important part is the event pattern - we are looking for AWS API CloudFormation calls, more precisely, we are looking for **DeleteStack** event. if it's needed we can also extend it to any other events that we are interested in.
 then, we are creating a target for our CW Event rule which is SNS topic that we gonna create later. we also gonna use a **input_transformer** to transform a JSON that AWS will send us. we don't need all information that AWS will send us, just the stack name, sourceIP, eventTime, event, region and userType and userName.
 
 **our sns topic**
