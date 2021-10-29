@@ -109,6 +109,6 @@ i waited and went into our CloudWatch log group and there it is!
 chaos monkey randomly removed one of the services in "arn:aws:ecs:$some_region:$account_id:cluster/some_cluster" and that service was a "xyz"
 ```
 
-you can also checkout ECS console if service was removed just to be sure.
+you can also check out ECS console if service was removed just to be sure.
 
 if you still got any issues with setting it up, you can check out my [repo](https://github.com/zelaskov/ecs-chaos-monkey).
